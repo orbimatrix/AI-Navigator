@@ -6,6 +6,11 @@ import tempfile
 import time
 import chardet
 
+
+# Force Python to use pysqlite3 instead of system sqlite3
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 from crewai import Agent, Task, Crew, Process
 from crewai_tools import FileWriterTool, SerperDevTool, GithubSearchTool, LinkupSearchTool, EXASearchTool
 from dotenv import load_dotenv
