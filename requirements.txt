@@ -5,3 +5,5 @@ python-dotenv
 crewai
 crewai-tools
 chromadb
+
+pysqlite3-binary
