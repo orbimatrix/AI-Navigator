@@ -4,3 +4,4 @@ chardet
 python-dotenv
 crewai
 crewai-tools
+chromadb==0.3.29
